@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'jv-state'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('jv-state');
+    expect(app).toEqual('jv-state');
   });
 
   it('should render title', () => {
