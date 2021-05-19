@@ -8,11 +8,15 @@ import {MatIconModule} from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ProfessoresComponent } from './professores/professores.component';
+import { AlunosComponent } from './alunos/alunos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AlunosComponent,
+    ProfessoresComponent,
   ],
   imports: [
     BrowserModule,

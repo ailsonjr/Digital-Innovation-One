@@ -11,3 +11,26 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
+
+<span-alunos [valorInicial]="valor"></span-alunos>
+
+<div>
+  <button (click)="mudarValor()">Mudar Valor</button>
+  <button (click)="reiniciarValor()">Reiniciar Valor</button>
+  <button (click)="exibirTabela()">Exibir Tabela</button>
+</div>
+
+<table *ngIf="exibirTabela">
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>E-mail</th>
+    <th>Curso</th>
+  </tr>
+  <tr *ngFor="let aluno of listaAlunos">
+    <td>{{ aluno.nome }}</td>
+    <td>{{ aluno.idade }}</td>
+    <td>{{ aluno.email }}</td>
+    <td>{{ aluno }}</td>
+  </tr>
+</table>
