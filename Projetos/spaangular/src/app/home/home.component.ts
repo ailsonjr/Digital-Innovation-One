@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
-import { alunos } from "../model/alunos";
+import { ThrowStmt } from '@angular/compiler';
+import { Component, Input, OnInit } from '@angular/core';
+import { alunos } from '../model/alunos'
 
 @Component({
   selector: 'spa-home',
@@ -9,12 +9,10 @@ import { alunos } from "../model/alunos";
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
-    this.valor = 5;
-  }
-  
+  constructor() { }
+
   valor: number;
-  exibeTabela: boolean = false;
+  exibeTabela:  boolean = false;
 
   listaAlunos: alunos[] = [
     { nome: 'Camila', idade: 27, email: 'camila.taruma@gmail.com', curso: 'Ciencia da Computacao' },
@@ -23,7 +21,7 @@ export class HomeComponent implements OnInit {
     { nome: 'Teste 3', idade: 45, email: 'Teste3@gmail.com', curso: 'Sistemas da informacao' }
   ];
 
-  displayedColumns: string[] = ['Nome', 'Idade', 'Email', 'Curso'];
+  displayedColumns: string[] = ['Nome', 'Idade', 'E-mail', 'Curso'];
 
   ngOnInit(): void {
     this.valor = 5;
@@ -37,7 +35,7 @@ export class HomeComponent implements OnInit {
     this.valor = 0;
   }
 
-  exibirTabela() {
+  exibirTabela(){
     this.exibeTabela = true;
   }
 

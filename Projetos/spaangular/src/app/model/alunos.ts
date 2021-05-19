@@ -1,6 +1,6 @@
 export class alunos {
-  nome: string;
-  idade: number;
-  email: string;
-  curso: string;
+    nome: string;
+    idade: number;
+    email: string;
+    curso: string;
 }
